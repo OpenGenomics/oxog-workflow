@@ -45,3 +45,9 @@ outputs:
   - id: cleaned_vcfs
     type: { type: array, items: File }
     source: "#oxog_filter/vcfs"
+  - id: callstats
+    type: File
+    source: "#oxog_filter/callstats"
+  - id: figures
+    type: File
+    source: "#oxog_filter/figures"
