@@ -40,6 +40,8 @@ steps:
     outputs:
       - id: vcfs
       - id: outtar
+      - id: callstats
+      - id: figures
 
 outputs:
   - id: cleaned_vcfs
@@ -49,5 +51,5 @@ outputs:
     type: File
     source: "#oxog_filter/callstats"
   - id: figures
-    type: File
+    type: { type: array, items: File }
     source: "#oxog_filter/figures"
